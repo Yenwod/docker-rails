@@ -91,4 +91,17 @@ Show help for ```rails new```
 $ docker run -rm rails-7.alpha-app:0.1 bin/rails new --help
 ```
 
+## Push to Docker Hub
 
+Example of command format to tag and push.
+
+```bash
+$ docker tag rails-7.alpha-app:0.1 cdowney68/rails-7.alpha-app:0.1
+$ docker push cdowney68/rails-7.alpha-app:0.1
+```
+
+## Run the container without building it yourself
+
+```bash
+$ docker run -p 3000:3000 cdowney68/rails-7.alpha-app:0.1
+```
