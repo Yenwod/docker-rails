@@ -4,6 +4,8 @@
 
 This project illustrates how to containerize your Rails application, starting with Rails 7.alpha, based upon DHH's demo of [Alpha preview: Modern JavaScript in Rails 7 without Webpack](https://www.youtube.com/watch?v=PtxZvFnL2i0)
 
+Highly recommended reading: Rails PR [Replace Webpacker with importmapped Hotwire as default JavaScript setup](https://github.com/rails/rails/pull/42999)
+
 I've been working with Rails since 2010, and this is - by far - the version that I am most excited about.  Rails has fully embraced modern Javascript and provide developers with a simple _and_ powerful way to leverage modern browsers.  
 
 ## Requirements
@@ -66,6 +68,14 @@ $ docker run -p 3000:3000 rails-7.alpha-app:0.1
 ```
 
 Point your browser to [http://localhost:3000/](http://localhost:3000) and you should see Yay! You’re on Rails!
+
+## Security
+
+Warning! The image you just created probably has many vulnerabilities.  Let's find out:
+
+```bash
+$ docker scan rails-7.alpha-app:0.1  
+```
 
 ## Rails command examples
 
