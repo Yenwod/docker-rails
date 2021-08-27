@@ -4,7 +4,9 @@
 
 This project illustrates how to containerize your Rails application, starting with Rails 7.alpha, based upon DHH's demo of [Alpha preview: Modern JavaScript in Rails 7 without Webpack](https://www.youtube.com/watch?v=PtxZvFnL2i0)
 
-Highly recommended reading: Rails PR [Replace Webpacker with importmapped Hotwire as default JavaScript setup](https://github.com/rails/rails/pull/42999)
+Highly recommended readings: 
+1. Rails PR [Replace Webpacker with importmapped Hotwire as default JavaScript setup](https://github.com/rails/rails/pull/42999)
+2. [Modern web apps without JavaScript bundling or transpiling](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
 
 I've been working with Rails since 2010, and this is - by far - the version that I am most excited about.  Rails has fully embraced modern Javascript and provide developers with a simple _and_ powerful way to leverage modern browsers.  
 
